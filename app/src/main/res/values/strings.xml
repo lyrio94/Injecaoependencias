@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">InjecaoDependencias</string>
+    <string name="carregar">Carregar</string>
+    <string name="personagem">Personagem:</string>
+    <string name="localiza_o">Localização</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="recuperar_localizacao">Recuperar Localização</string>
+</resources>
