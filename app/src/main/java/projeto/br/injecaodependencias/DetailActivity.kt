@@ -37,7 +37,7 @@ class DetailActivity : AppCompatActivity(), CoroutineScope {
 
         launch {
             val retrofit = createRetrofit()
-            val service = retrofit.create(RickAndMortyService::class.java)
+            val service = retrofit.create(MainActivity.RickAndMortyService::class.java)
 
             val response = service.location(lid)
             tvLocationName.text = response.name
@@ -69,10 +69,4 @@ class DetailActivity : AppCompatActivity(), CoroutineScope {
             .build()
     }
 
-
-    interface RickAndMortyService {
-        @GET("location/{id}")
-        @Headers("Content-Type: application/json")
-        suspend fun location(@Path("id") id: Int): MainActivity.Location
-    }
 }
